@@ -64,7 +64,7 @@ const Footer = () => {
             <p className="text-gray-800 text-sm leading-relaxed font-medium">
               We are a leading Engineering college in India,{" "}
               <span className="text-purple-700 font-semibold">
-                Rajalakshmi Institutions
+                KLN COLLEGE OF ENGINEERING
               </span>
             </p>
           </div>
@@ -133,7 +133,7 @@ const Footer = () => {
             <div className="space-y-4 text-sm text-gray-600 leading-relaxed">
               <div>
                 <p className="font-semibold text-gray-800 text-sm">
-                  Rajalakshmi Institutions Head Office
+                  KLN COLLEGE OF ENGINEERNING Head Office
                 </p>
                 <p># 69 New Avadi Road</p>
                 <p>Kilpauk</p>
@@ -165,7 +165,7 @@ const Footer = () => {
               href="mailto:admin@rajalakshmi.edu.in"
               className="text-sm text-purple-700 hover:underline"
             >
-              admin@rajalakshmi.edu.in
+              admin@KLN.edu.in
             </a>
           </div>
         </div>
@@ -190,8 +190,8 @@ const Footer = () => {
       {/* Bottom bar */}
       <div className="bg-gray-50 border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 gap-2">
-          <p>© {new Date().getFullYear()} Rajalakshmi Institutions. All rights reserved.</p>
-          <p>rajalakshmi.org</p>
+          <p>© {new Date().getFullYear()} KLN Institutions. All rights reserved.</p>
+          <p>KLN COLLEGE OF ENGINEERING.org</p>
         </div>
       </div>
     </footer>
