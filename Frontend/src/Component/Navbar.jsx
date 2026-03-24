@@ -92,12 +92,11 @@ const Navbar = ({ name, about }) => {
             Fee Structure
           </button>
         </div>
-
       </div>
 
       {/* Heading */}
       <div>
-        <h1 className='text-6xl font-serif text-center text-purple-800'>
+        <h1 className='text-6xl font-serif text-center text-purple-800 tracking-tight'>
           {name}
         </h1>
         <p className='text-md font-serif text-center py-2 text-gray-700'>
