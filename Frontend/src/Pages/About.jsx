@@ -27,29 +27,28 @@ const About = () => {
       case "Program":
         return <Program />
       default:
-        return <History />
+        return <VisionMission />
     }
   }
 
   return (
     <div className="bg-gray-100 min-h-screen">
       <Navbar name={"About K.L.N"} />
-      <div className='flex justify-center gap-10 py-10'>
+      <div className='flex justify-center gap-10 '>
         <div className='w-[250px] h-fit bg-white rounded-xl shadow-md p-5 sticky top-24'>
-
           <h3 className='text-xl font-semibold text-purple-800 mb-4 tracking-wide'>
             About KLNCE
           </h3>
 
           <ul className='flex flex-col gap-2'>
             <li
-              onClick={() => setActiveSection("VisionMission")}
+              onClick={()=> setActiveSection("VisionMission")}
               className={`px-3 py-2 rounded-lg cursor-pointer transition duration-300
-              ${activeSection === "VisionMission"
+                ${activeSection === 'VisionMission'
                 ? "bg-purple-600 text-white"
                 : "hover:bg-purple-100 hover:text-purple-700"}`}
             >
-              Vission and Mission
+                Vision and Mission
             </li>
 
             <li

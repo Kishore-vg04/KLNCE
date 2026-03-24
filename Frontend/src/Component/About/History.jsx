@@ -2,9 +2,9 @@ import React from 'react'
 const History = () => {
   return (
     <div>
-      <div className='w-[100%] text-left p-8 rounded-xl '>
+      <div className='w-[100%] text-left rounded-xl '>
 
-         <div className='p-5'>
+         <div>
             <h4 className='font-semibold text-2xl mb-4 text-purple-800 tracking-wide'>
             About
             </h4>
@@ -40,7 +40,7 @@ const History = () => {
             Correspondent along with other executive committee members.
           </p>
          </div>
-         <div className='p-5'>
+         <div className='py-5'>
             <h4 className='font-semibold text-2xl mb-4 text-purple-800 tracking-wide'>
             Campus: 
             </h4>
