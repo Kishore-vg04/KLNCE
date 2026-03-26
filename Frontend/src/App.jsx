@@ -11,7 +11,7 @@ const App = () => {
   return (
     <BrowserRouter>
       {/* Full screen flex layout */}
-      <div className="min-h-screen flex flex-col bg-gray-200">
+      <div className="min-h-screen flex flex-col">
 
         {/* Main Content */}
         <main className="flex-grow w-full px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 py-4">

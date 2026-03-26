@@ -7,7 +7,7 @@ const Placement = () => {
     ];
 
     return (
-        <div className='bg-gray-100 min-h-screen font-serif'>
+        <div className=' min-h-screen font-serif'>
             <Navbar 
               name={"Placement Cell"} 
               about={"Bridging the Gap Between Campus & Corporate"} 

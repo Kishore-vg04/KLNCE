@@ -26,7 +26,7 @@ const Resources = () => {
     ];
 
     return (
-        <div className='bg-gray-100 min-h-screen font-serif'>
+        <div className=' min-h-screen font-serif'>
             <Navbar 
               name={"Campus Resources"} 
               about={"Empowering Students with World-Class Academic Facilities"} 

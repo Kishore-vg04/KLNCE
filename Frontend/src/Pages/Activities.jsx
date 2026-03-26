@@ -30,7 +30,7 @@ const Activities = () => {
     ];
 
     return (
-        <div className='bg-gray-100 min-h-screen font-serif pb-16'>
+        <div className=' min-h-screen font-serif pb-16'>
             <Navbar 
               name={"Student Activities"} 
               about={"Beyond the Classroom: Cultivating Holistic Development"} 

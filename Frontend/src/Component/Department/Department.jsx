@@ -168,11 +168,11 @@ function Admissions() {
   };
 
   return (
-  <div className="min-h-screen bg-gray-100 font-serif">
+  <div className="min-h-screen  font-serif">
     <Navbar />
 
     {/* Hero Section */}
-    <div className="relative bg-gray-100 pt-8 sm:pt-10 pb-6 sm:pb-8 text-center overflow-hidden px-4">
+    <div className="relative  pt-8 sm:pt-10 pb-6 sm:pb-8 text-center overflow-hidden px-4">
 
       {/* Decorative Stars */}
       <span className="absolute top-6 left-6 sm:left-12 text-purple-800 text-xl sm:text-3xl">✦</span>

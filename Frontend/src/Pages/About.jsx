@@ -36,11 +36,11 @@ const About = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 font-serif">
+    <div className="min-h-screen  font-serif">
       <Navbar />
 
       {/* Hero Section */}
-      <div className="relative bg-gray-100 pt-8 sm:pt-10 pb-6 sm:pb-8 text-center px-4">
+      <div className="relative pt-8 sm:pt-10 pb-6 sm:pb-8 text-center px-4">
         <span className="absolute top-6 left-6 text-purple-800 text-xl">✦</span>
         <span className="absolute top-10 right-6 text-purple-800 text-lg">✦</span>
 
