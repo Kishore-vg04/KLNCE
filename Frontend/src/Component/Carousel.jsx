@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
-import clg1 from "../assets/clg.jpg";
-import clg2 from "../assets/clg2.jpg";
-import clg3 from "../assets/clg3.jpg";
+import clg1 from "../assets/clg.JPG";
+import clg2 from "../assets/clg2.JPG";
+import clg3 from "../assets/clg3.JPG";
 
 const baseImages = [
   { img: clg1, title: "Campus Life" },
