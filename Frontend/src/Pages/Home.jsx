@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import Navbar from '../Component/Navbar'
 import Carousal from '../Component/Carousel'
-import clg1 from '../assets/clg.jpg'
-import clg2 from '../assets/clg2.jpg'
-import clg3 from '../assets/clg3.jpg'
-import clg4 from '../assets/clg4.jpg'
+import clg1 from '../assets/clg.JPG'
+import clg2 from '../assets/clg2.JPG'
+import clg3 from '../assets/clg3.JPG'
+import clg4 from '../assets/clg4.JPG'
 import event from '../assets/event1.jpg'
 
 const Home = () => {
