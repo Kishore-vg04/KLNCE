@@ -168,69 +168,90 @@ function Admissions() {
   };
 
   return (
-    <div style={{ fontFamily: "serif" }} className="min-h-screen bg-gray-100">
-      <Navbar />
+  <div className="min-h-screen bg-gray-100 font-serif">
+    <Navbar />
 
-      <div className="relative bg-gray-100 pt-10 pb-8 text-center overflow-hidden">
+    {/* Hero Section */}
+    <div className="relative bg-gray-100 pt-8 sm:pt-10 pb-6 sm:pb-8 text-center overflow-hidden px-4">
 
-        <span className="absolute top-8 left-12 text-purple-800 text-3xl select-none">✦</span>
-        <span className="absolute top-16 right-16 text-purple-800 text-2xl select-none">✦</span>
+      {/* Decorative Stars */}
+      <span className="absolute top-6 left-6 sm:left-12 text-purple-800 text-xl sm:text-3xl">✦</span>
+      <span className="absolute top-12 right-6 sm:right-16 text-purple-800 text-lg sm:text-2xl">✦</span>
 
-        <p className="text-sm text-gray-600 flex items-center justify-center gap-2 mb-2">
-          <span className="w-2 h-2 rounded-full bg-green-500 inline-block" />
-          Top Science &amp; Technology Institution in India
-        </p>
-        <h1 className="text-6xl font-extrabold text-purple-700 tracking-tight mb-3">
-          Admissions
-        </h1>
-        <p className="text-sm text-gray-500">
-          <a href="/" className="hover:text-purple-700">🏠</a>
-          <span className="mx-2 text-purple-700">›</span>
-          <span className="text-purple-700 font-medium">Admissions</span>
-        </p>
+      <p className="text-xs sm:text-sm text-gray-600 flex items-center justify-center gap-2 mb-2">
+        <span className="w-2 h-2 rounded-full bg-green-500 inline-block" />
+        Top Science & Technology Institution in India
+      </p>
 
-        {/* QS Badge */}
-        <div className="absolute top-6 right-6 bg-gray-800 text-white text-xs font-bold px-3 py-2 rounded border-2 border-yellow-400 text-center leading-tight hidden md:block">
-          <p className="text-yellow-400 text-[10px]">QS I·GAUGE</p>
-          <p className="text-base tracking-widest">DIAMOND</p>
-        </div>
-      </div>
+      <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-purple-700 tracking-tight mb-2">
+        Admissions
+      </h1>
 
-      {/* Body */}
-      <div className="max-w-6xl mx-auto px-4 pb-16 flex flex-col md:flex-row gap-6 mt-4">
-        {/* Sidebar */}
-        <aside className="w-full md:w-64 shrink-0">
-          <div className="bg-white rounded-xl shadow-sm overflow-hidden">
-            {tabs.map((tab) => (
-              <button
-                key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
-                className={`w-full text-left px-5 py-4 text-sm font-medium transition-colors duration-150 border-b border-gray-100 last:border-0 ${
-                  activeTab === tab.id
-                    ? "bg-purple-700 text-white"
-                    : "text-gray-700 hover:bg-purple-50 hover:text-purple-700"
-                }`}
-              >
-                {tab.label}
-              </button>
-            ))}
-          </div>
+      <p className="text-xs sm:text-sm text-gray-500">
+        <a href="/" className="hover:text-purple-700">🏠</a>
+        <span className="mx-2 text-purple-700">›</span>
+        <span className="text-purple-700 font-medium">Admissions</span>
+      </p>
 
-          {/* Admissions Open badge */}
-          <div className="mt-6">
-            <button className="bg-yellow-400 hover:bg-yellow-300 text-purple-900 font-bold text-sm px-5 py-2.5 rounded-full shadow transition-colors duration-200">
-              Admissions Open 2026
-            </button>
-          </div>
-        </aside>
-
-        {/* Content */}
-        <main className="flex-1 bg-white rounded-xl shadow-sm p-6 md:p-8 min-h-96">
-          {renderContent()}
-        </main>
+      {/* QS Badge */}
+      <div className="absolute top-4 right-4 sm:top-6 sm:right-6 bg-gray-800 text-white text-[10px] sm:text-xs font-bold px-2 sm:px-3 py-1.5 sm:py-2 rounded border-2 border-yellow-400 text-center leading-tight hidden sm:block">
+        <p className="text-yellow-400 text-[8px] sm:text-[10px]">QS I·GAUGE</p>
+        <p className="text-sm sm:text-base tracking-widest">DIAMOND</p>
       </div>
     </div>
-  );
+
+    {/* Mobile Tabs */}
+    <div className="md:hidden px-4 mb-4 overflow-x-auto">
+      <div className="flex gap-2">
+        {tabs.map((tab) => (
+          <button
+            key={tab.id}
+            onClick={() => setActiveTab(tab.id)}
+            className={`whitespace-nowrap px-4 py-2 rounded-full text-sm font-medium transition ${
+              activeTab === tab.id
+                ? "bg-purple-700 text-white"
+                : "bg-white text-gray-700 border"
+            }`}
+          >
+            {tab.label}
+          </button>
+        ))}
+      </div>
+    </div>
+
+    {/* Body */}
+    <div className="max-w-6xl mx-auto px-4 pb-16 flex flex-col md:flex-row gap-6">
+
+      {/* Sidebar (Desktop Only) */}
+      <aside className="hidden md:block w-64 shrink-0 sticky top-24 h-fit">
+        <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+          {tabs.map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              className={`w-full text-left px-5 py-4 text-sm font-medium transition ${
+                activeTab === tab.id
+                  ? "bg-purple-700 text-white"
+                  : "text-gray-700 hover:bg-purple-50 hover:text-purple-700"
+              }`}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
+
+        <button className="mt-6 w-full bg-yellow-400 hover:bg-yellow-300 text-purple-900 font-bold text-sm px-5 py-2.5 rounded-full shadow transition">
+          Admissions Open 2026
+        </button>
+      </aside>
+
+      {/* Content */}
+      <main className="flex-1 bg-white rounded-xl shadow-sm p-4 sm:p-6 md:p-8 min-h-[300px]">
+        {renderContent()}
+      </main>
+    </div>
+  </div>
+);
 }
 
 export default Admissions;

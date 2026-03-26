@@ -6,23 +6,31 @@ import Placement from "./Pages/Placement";
 import Resources from "./Pages/Resources";
 import Activities from "./Pages/Activities";
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
+
 const App = () => {
   return (
-    <div className='bg-gray-200'>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/department" element={<Admissions />}></Route>
-          <Route path="/placement" element={<Placement />}></Route>
-          <Route path="/resources" element={<Resources />}></Route>
-          <Route path="/activities" element={<Activities />}></Route>
-        </Routes>
+    <BrowserRouter>
+      {/* Full screen flex layout */}
+      <div className="min-h-screen flex flex-col bg-gray-200">
+
+        {/* Main Content */}
+        <main className="flex-grow w-full px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 py-4">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/department" element={<Admissions />} />
+            <Route path="/placement" element={<Placement />} />
+            <Route path="/resources" element={<Resources />} />
+            <Route path="/activities" element={<Activities />} />
+          </Routes>
+        </main>
+
+        {/* Footer */}
         <Footer />
-      </BrowserRouter>
 
-    </div>
-  )
-}
+      </div>
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;
