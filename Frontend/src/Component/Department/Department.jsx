@@ -168,12 +168,11 @@ function Admissions() {
   };
 
   return (
-    <div style={{ fontFamily: "sans-serif" }} className="min-h-screen bg-gray-100">
+    <div style={{ fontFamily: "serif" }} className="min-h-screen bg-gray-100">
       <Navbar />
 
-      {/* Hero */}
       <div className="relative bg-gray-100 pt-10 pb-8 text-center overflow-hidden">
-        {/* Decorative stars */}
+
         <span className="absolute top-8 left-12 text-purple-800 text-3xl select-none">✦</span>
         <span className="absolute top-16 right-16 text-purple-800 text-2xl select-none">✦</span>
 

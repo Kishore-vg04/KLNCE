@@ -4,7 +4,7 @@ import HomeIcon from '@mui/icons-material/Home';
 
 const Navbar = ({ name, about }) => {
   const navigate = useNavigate();
-  const location = useLocation(); 
+  const location = useLocation();
 
   return (
     <div>
@@ -22,8 +22,8 @@ const Navbar = ({ name, about }) => {
                 onClick={() => navigate('/')}
                 className={`flex items-center gap-1 text-lg px-3 rounded-lg cursor-pointer transition duration-300
                 ${location.pathname === '/'
-                  ? 'bg-white text-purple-700'
-                  : 'text-white hover:bg-white hover:text-purple-500'}`}
+                    ? 'bg-white text-purple-700'
+                    : 'text-white hover:bg-white hover:text-purple-500'}`}
               >
                 <HomeIcon fontSize="small" />
                 Home
@@ -33,8 +33,8 @@ const Navbar = ({ name, about }) => {
                 onClick={() => navigate('/about')}
                 className={`text-lg px-3 rounded-lg cursor-pointer transition duration-300
                 ${location.pathname === '/about'
-                  ? 'bg-white text-purple-700'
-                  : 'text-white hover:bg-white hover:text-purple-500'}`}
+                    ? 'bg-white text-purple-700'
+                    : 'text-white hover:bg-white hover:text-purple-500'}`}
               >
                 About
               </li>
@@ -43,8 +43,8 @@ const Navbar = ({ name, about }) => {
                 onClick={() => navigate('/department')}
                 className={`text-lg px-3 rounded-lg cursor-pointer transition duration-300
                 ${location.pathname === '/department'
-                  ? 'bg-white text-purple-700'
-                  : 'text-white hover:bg-white hover:text-purple-500'}`}
+                    ? 'bg-white text-purple-700'
+                    : 'text-white hover:bg-white hover:text-purple-500'}`}
               >
                 Department
               </li>
@@ -53,28 +53,28 @@ const Navbar = ({ name, about }) => {
                 onClick={() => navigate('/placement')}
                 className={`text-lg px-3 rounded-lg cursor-pointer transition duration-300
                 ${location.pathname === '/placement'
-                  ? 'bg-white text-purple-700'
-                  : 'text-white hover:bg-white hover:text-purple-500'}`}
+                    ? 'bg-white text-purple-700'
+                    : 'text-white hover:bg-white hover:text-purple-500'}`}
               >
                 Placement
               </li>
 
               <li
-                onClick={() => navigate('/placement')}
+                onClick={() => navigate('/resources')}
                 className={`text-lg px-3 rounded-lg cursor-pointer transition duration-300
                 ${location.pathname === '/resources'
-                  ? 'bg-white text-purple-700'
-                  : 'text-white hover:bg-white hover:text-purple-500'}`}
+                    ? 'bg-white text-purple-700'
+                    : 'text-white hover:bg-white hover:text-purple-500'}`}
               >
                 Resources
               </li>
-              
+
               <li
-                onClick={() => navigate('/placement')}
+                onClick={() => navigate('/activities')}
                 className={`text-lg px-3 rounded-lg cursor-pointer transition duration-300
                 ${location.pathname === '/activities'
-                  ? 'bg-white text-purple-700'
-                  : 'text-white hover:bg-white hover:text-purple-500'}`}
+                    ? 'bg-white text-purple-700'
+                    : 'text-white hover:bg-white hover:text-purple-500'}`}
               >
                 Activities
               </li>
