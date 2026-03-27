@@ -192,12 +192,6 @@ function Admissions() {
         <span className="mx-2 text-purple-700">›</span>
         <span className="text-purple-700 font-medium">Admissions</span>
       </p>
-
-      {/* QS Badge */}
-      <div className="absolute top-4 right-4 sm:top-6 sm:right-6 bg-gray-800 text-white text-[10px] sm:text-xs font-bold px-2 sm:px-3 py-1.5 sm:py-2 rounded border-2 border-yellow-400 text-center leading-tight hidden sm:block">
-        <p className="text-yellow-400 text-[8px] sm:text-[10px]">QS I·GAUGE</p>
-        <p className="text-sm sm:text-base tracking-widest">DIAMOND</p>
-      </div>
     </div>
 
     {/* Mobile Tabs */}
