@@ -1,7 +1,7 @@
 import React from 'react'
 const History = () => {
   return (
-    <div>
+    <div className='p-5'>
       <div className='w-[100%] text-left rounded-xl '>
 
          <div>

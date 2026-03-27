@@ -4,7 +4,7 @@ const VisionMission = () => {
   return (
     <div className="w-full px-4 sm:px-6 lg:px-0">
       
-      <div className="bg-white rounded-xl shadow-sm p-5 sm:p-6 md:p-8">
+      <div className="sm:p-6 md:p-8">
         
         {/* Heading */}
         <h4 className="font-semibold text-xl sm:text-2xl mb-6 text-purple-800 tracking-wide border-b-2 border-purple-200 pb-2">

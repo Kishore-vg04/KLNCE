@@ -2,7 +2,7 @@ import React from "react";
 
 const Founder = () => {
   return (
-    <div className="w-full text-left rounded-xl px-4 sm:px-6 lg:px-0">
+    <div className="w-full p-5 text-left rounded-xl px-4 sm:px-6 lg:px-0">
       
       {/* Heading */}
       <h4 className="font-semibold text-xl sm:text-2xl mb-6 text-purple-800 tracking-wide border-b-2 border-purple-200 pb-2">
